@@ -539,7 +539,9 @@ class FileSystem(object):
         if(plugins_run_before_status == False):
             log.warn('At least one plugin pre-run failed for %s' % _file)
             return
-
+        # print(type(metadata))
+        # for ent in metadata.items():
+        #     print(ent)
         directory_name = self.get_folder_path(metadata)
         dest_directory = os.path.join(destination, directory_name)
         file_name = self.get_file_name(metadata)

@@ -6,7 +6,7 @@ from os import environ, path
 from sys import version_info
 
 #: If True, debug messages will be printed.
-debug = False
+debug = True
 
 #: Directory in which to store Elodie settings.
 application_directory = '{}/.elodie'.format(path.expanduser('~'))
@@ -45,7 +45,7 @@ if (
     mapquest_key = environ['ELODIE_MAPQUEST_KEY']
 
 #: Accepted language in responses from MapQuest
-accepted_language = 'en'
+accepted_language = 'es'
 
 # check python version, required in filesystem.py to trigger appropriate method
 python_version = version_info.major

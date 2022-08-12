@@ -24,6 +24,7 @@ class Result(object):
             error_result = []
             for id in self.error_items:
                 error_result.append([id])
+                print(id)
 
             print("****** ERROR DETAILS ******")
             print(tabulate(error_result, headers=error_headers))
@@ -37,3 +38,4 @@ class Result(object):
 
         print("****** SUMMARY ******")
         print(tabulate(result, headers=headers))
+        print(result)

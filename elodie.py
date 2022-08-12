@@ -70,7 +70,6 @@ def import_file(_file, destination, album_from_folder, trash, allow_duplicates):
         log.all('%s -> %s' % (_file, dest_path))
     if trash:
         send2trash(_file)
-
     return dest_path or None
 
 @click.command('batch')
